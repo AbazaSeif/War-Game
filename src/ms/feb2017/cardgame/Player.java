@@ -3,10 +3,20 @@ import java.util.*;
 
 public class Player {
 	
-	private String Name;
-	private ArrayList<Card> cards;
+	private String name;
+	private List<Card> playerCards;
 	
 	public Player(String n){
-		Name =n;
+		name = n;
 	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public void setCards(List<Card> card) {
+		this.playerCards = card;
+	}
+	
+
 }

@@ -1,16 +1,16 @@
 package ms.feb2017.cardgame;
 
-public abstract class Card implements Comparable{
+public class Card implements Comparable<Card>{
 	private int value;
-	private Suit suit;
+	private int suitType;
 	
-	public Card(int v, Suit s){
+	public Card(int s, int v){
 		value = v;
-		suit = s;
+		suitType = s;
 	}
 	
-	public Suit getSuit(){
-		return suit;
+	public int getSuit(){
+		return suitType;
 	}
 	
 	public int getValue(){
@@ -27,5 +27,6 @@ public abstract class Card implements Comparable{
 			return 0;
 		}
 	}
+
 
 }
