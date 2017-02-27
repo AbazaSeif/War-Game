@@ -17,6 +17,7 @@ public class Card implements Comparable<Card>{
 		return value;
 	}
 	
+	@Override
 	public int compareTo(Card c2) {
 		// TODO Auto-generated method stub
 		if(value > c2.value){
@@ -27,6 +28,10 @@ public class Card implements Comparable<Card>{
 			return 0;
 		}
 	}
-
-
+	
+	@Override
+	public String toString(){
+		return "Suit " + this.getSuit() + " Value: " + this.getValue();
+		
+	}
 }

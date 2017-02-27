@@ -18,13 +18,7 @@ public class Deck {
 	}
 	
 	public List<Card> getCards(){
-		return cards;
+		return this.cards;
 	}
-	/*
-	public void shuffle(){
-
-	    Collections.shuffle(cards);
-	}
-	*/
 	
 }

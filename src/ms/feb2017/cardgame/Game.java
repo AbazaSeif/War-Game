@@ -12,10 +12,8 @@ public class Game {
 		String player2 =sc.next();
 		sc.close();
 		WarGame wg = new WarGame(player1,player2);
-		
+		String winner = wg.playGame();
+		System.out.println("Winner is : " + winner);
 	}
 	
-	
-	
-
 }
