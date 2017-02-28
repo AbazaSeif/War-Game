@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 import org.junit.Test;
 import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 
 import main.ms.feb2017.cardgame.*;
 
@@ -14,23 +16,30 @@ public class WarGameTest {
 	
 	WarGame wg;
 	
+	@Mock
+	private Deck mockDeck;
+	
+	
 	@Before
 	public void Setup(){
-
-		wg = new WarGame("Player1","Player2");
-		
+			MockitoAnnotations.initMocks(this);
+			Card c1 = new Card(0,11);
+			Card c2 = new Card(2, 9);
+			List<Card> deckOfCards = new ArrayList<>();
+			deckOfCards.add(c1);
+			deckOfCards.add(c2);
+			when(mockDeck.getCards()).thenReturn(deckOfCards);
+			wg =  new WarGame("TestPlayer1","TestPlayer2",mockDeck);
 
 	}
 	
 
 	@Test
 	public void testPlayGame() {
-		fail("Not yet implemented");
+		String winner = wg.playGame();
+		assertEquals("TestPlayer2",winner);
 	}
 
-	@Test
-	public void testCheckPlayerEmpty() {
-		fail("Not yet implemented");
-	}
+	
 
 }

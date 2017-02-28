@@ -4,7 +4,7 @@ import java.util.*;
 
 public class WarGame {
 
-	Deck deck;
+	
 	Player p1;
 	Player p2;
 	List<Card> deckOfCards;
@@ -12,8 +12,8 @@ public class WarGame {
 	List<Card> player2Cards = new ArrayList<>();
 	
 	
-	public WarGame(String player1, String player2){
-		deck = new Deck();
+	public WarGame(String player1, String player2, Deck deck){
+
 		deckOfCards = deck.getCards();
 		Collections.shuffle(deckOfCards);	
 		distributeCards(deckOfCards);

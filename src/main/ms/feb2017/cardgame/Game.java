@@ -11,7 +11,8 @@ public class Game {
 		System.out.println("Enter Player 2 : ");
 		String player2 =sc.next();
 		sc.close();
-		WarGame wg = new WarGame(player1,player2);
+		Deck d = new Deck();
+		WarGame wg = new WarGame(player1,player2,d);
 		String winner = wg.playGame();
 		System.out.println("Winner is : " + winner);
 	}
