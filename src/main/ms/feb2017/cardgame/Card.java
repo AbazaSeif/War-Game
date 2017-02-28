@@ -1,4 +1,4 @@
-package ms.feb2017.cardgame;
+package main.ms.feb2017.cardgame;
 
 public class Card implements Comparable<Card>{
 	private int value;

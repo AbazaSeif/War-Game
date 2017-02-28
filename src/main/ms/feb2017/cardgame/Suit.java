@@ -1,4 +1,4 @@
-package ms.feb2017.cardgame;
+package main.ms.feb2017.cardgame;
 
 public enum Suit {
 	club(0), Diamond(1), Heart(2), Spade(3);

@@ -1,4 +1,4 @@
-package ms.feb2017.cardgame;
+package main.ms.feb2017.cardgame;
 import java.util.*;
 
 public class Game {
