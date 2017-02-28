@@ -5,8 +5,8 @@ public class Card implements Comparable<Card>{
 	private int suitType;
 	
 	public Card(int s, int v){
-		value = v;
 		suitType = s;
+		value = v;
 	}
 	
 	public int getSuit(){
